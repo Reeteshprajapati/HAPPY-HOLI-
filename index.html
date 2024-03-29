@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-image: url(holi-celebrate.gif ); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+        }
+
+        NAV {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+            cursor: pointer;
+            float: right;
+            position: absolute;
+            top: 7px;
+            right: 15px;
+            /* box-shadow: 0px 0px 10px 1px rgb(5, 3, 3); */
+
+        }
+
+        NAV UL LI {
+            display: inline-block;
+            list-style: none;
+            margin: 10PX 20PX;
+
+            font-weight: 700;
+
+        }
+
+        NAV UL LI a {
+            color: rgb(235, 72, 72);
+            /* background-color: rgb(247, 106, 129); */
+            border-radius: 40px;
+            padding: 9px;
+            text-decoration: none;
+            font-size: 20px;
+            position: relative;
+            text-transform: uppercase;
+            margin-right: 20px;
+            font-weight: 900;
+            border: 2px solid white;
+            transition: color 0.2s;
+        }
+
+        NAV UL LI a:hover {
+            color: rgb(247, 4, 44);
+        }
+
+        header h4 {
+            text-transform: uppercase;
+            font-style: italic;
+            position: absolute;
+            left: 170px;
+            top: -20px;
+            font-size: 27px;
+            font-weight: 800;
+            color: rgb(193, 92, 233);
+            padding: 9px;
+            cursor: pointer;
+
+        }
+
+        section div {
+
+            color: white;
+            height: 400px;
+            width: 520px;
+            margin-top: 150px;
+            margin-left: 180px;
+            position: relative;
+            font-weight: 700;
+            font-style: italic;
+
+        }
+
+        section div p {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+
+        section div h4 {
+            font-size: 55px;
+            position: absolute;
+            top: -50px;
+
+
+        }
+
+        section div .p1 {
+            margin-top: 160px;
+            font-size: 20px;
+            color: rgb(253, 253, 253);
+        }
+
+        section div h3 {
+            font-size: 39px;
+            background: linear-gradient(to right, rgb(0, 248, 41), rgb(19, 198, 230));
+            position: absolute;
+            top: 230px;
+            box-shadow: 0px 0px 5px 5px transparent;
+            display: inline-block;
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        section div .btn1 {
+            color: rgb(247, 15, 54);
+            padding: 9px;
+            font-size: 19px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border-radius: 40px;
+            font-weight: 700;
+            background-color: transparent;
+            position: absolute;
+            top: 340px;
+            left: 20px;
+            border: 2px solid rgb(214, 157, 157);
+            cursor: pointer;
+            font-style: italic;
+            text-transform: capitalize;
+
+        }
+
+        section div .btn2 {
+            color: rgb(241, 9, 48);
+            padding: 9px;
+            font-size: 19px;
+            position: absolute;
+            top: 360px;
+            left: 180px;
+            margin-left: 20px;
+            border-radius: 40px;
+            font-weight: 700;
+            background-color: transparent;
+            border: 2px solid rgb(214, 157, 157);
+            cursor: pointer;
+            font-style: italic;
+            text-transform: capitalize;
+
+        }
+
+        .circle1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            left: 360px;
+            z-index: -100;
+            box-shadow: 1px 1px 16px 19px rgb(45, 221, 29);
+            background-color: rgb(45, 221, 29);
+            border: none;
+            animation: d;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        @keyframes d{
+            100%{
+                transform: translate(50px,100px);
+            }
+        }
+       
+        .circle2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 415px;
+            left: 339px;
+            z-index: -100;
+            box-shadow: 1px 1px 16px 19px yellow;
+            background-color: yellow;
+            animation: b;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        @keyframes b{
+           100%{
+                transform: translate(-50px,-50px);
+            }
+        }
+
+        .circle3 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 250px;
+            left: 170px;
+            z-index: -100;
+            box-shadow: 1px 1px 16px 19px rgb(221, 29, 29);
+            background-color: rgb(221, 29, 29);
+            animation: c;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        @keyframes c{
+           100%{
+                transform: translate(50px,-50px);
+            }
+        }
+
+        .circle4 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 270px;
+            left: 530px;
+            z-index: -100;
+            box-shadow: 1px 1px 16px 19px rgb(221, 29, 147);
+            background-color: rgb(221, 29, 147);
+            animation: e;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            
+        }
+        @keyframes e{
+           100%{
+                transform: translate(-50px,50px);
+            }
+        }
+
+        img {
+            height: 350px;
+            width: 350px;
+            position: absolute;
+            top: 150px;
+            right: 220px;
+            border-radius: 40px;
+            border-top-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            box-shadow: 1px 1px 17px 4px rgb(228, 100, 14);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4>happy holi</h4>
+        <!-- <nav>
+
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about </a></li>
+                <li><a href="#">holi</a></li>
+                <li><a href="#">more</a></li>
+            </ul>
+        </nav> -->
+    </header>
+    <section>
+        <div>
+            <p>hey there!!</p>
+            <h4>i am <br>Reetesh Prajapati..</h4>
+            <p class="p1">Wishing you and you loved ones a very colourful Holi, <br>May you forget all your womies and
+                enjoy this to the fuilest..</p>
+            <h3>Happy Holi!</h3>
+            <!-- <button class="btn1">contact</button>
+            <button class="btn2">Login</button> -->
+        </div>
+    </section>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <img src="18.03.2024_01.39.32_REC.png" alt="happy holi">
+</body>
+
+</html>
